@@ -40,6 +40,7 @@ sed 's/candycane/newstring/g' the_critical_elf_app > newapp
 ```
 
 running the newapp we get:
+
 ![](https://i.imgur.com/AcaM6nq.png)
 
 ```python
@@ -59,9 +60,11 @@ rule yara_rule_1056 {
 ```
 
 ![](https://i.imgur.com/CgTIOw0.png)
+
 *yara docs for "all of them"*
 
 The post on Stackexchange for using VIM with binaries
+
 [](https://vi.stackexchange.com/posts/11906/timeline)
 
 # TL;DR Answer
@@ -139,6 +142,7 @@ rule yara_rule_1732 {
 
 Lots going on but the filesize being < 50KB catches my eye in the conditions.
 I set a loop in bash to echo a bunch of 0s and ls -la the file and stopped it when the file was over 50KB
+
 ```
 x=1; while [ $x -le 1000 ]; do echo "00000000000000000000000000000" >> tmp $(( x++ )); done
 ```
@@ -159,9 +163,6 @@ Elf Jolliness Quotient: 4a6f6c6c7920456e6f7567682c204f76657274696d6520417070726f
 ![](https://i.imgur.com/yQQcfSs.png)
 
 
-# Exiftool naughty/nice records
 
-The dates made this trivial since all the modified dates are in perfect order.
 
-![](https://i.imgur.com/Mc152kV.png)
 
